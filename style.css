@@ -25,13 +25,10 @@ body {
 }
 
 .calculator {
-  width: 400px;
-  display: flex;
-  justify-content: center;
-
+  width: 300px;
   border: solid 2px black;
   border-radius: 12px;
-  padding: 2em;
+  padding: 1.25em;
 }
 
 .buttons {
@@ -39,6 +36,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 5px;
+
+  width: 100%;
 }
 
 button {
@@ -46,15 +45,20 @@ button {
   
   font-size: 1.5em;
   padding: .75em;
+  border-radius: 4px;
 }
 
 input {
-  flex: 1 1 100%;
+  width: 100%;
 
+  word-wrap: break-word;
+  word-break: break-all;
   font-size: 2em;
   text-align: end;
   height: 2em;
   padding-right: .5em;
+  padding-left: .5em;
   margin-bottom: .5em;
   background-color: #dcead6;
+  border-radius: 4px;
 }
