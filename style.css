@@ -16,11 +16,22 @@
 
 /* Flexbox */
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 65vh;
+}
+
 .calculator {
   width: 400px;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  border: solid 2px black;
+  border-radius: 12px;
+  padding: 2em;
 }
 
 .buttons {
@@ -45,4 +56,5 @@ input {
   height: 2em;
   padding-right: .5em;
   margin-bottom: .5em;
+  background-color: #dcead6;
 }
