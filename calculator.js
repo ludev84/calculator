@@ -31,6 +31,7 @@ function clearInput() {
 
 function updateInputDisplay() {
   input.value = input.dataset.a + getOperatorSymbol(input.dataset.op) + input.dataset.b;
+  display.textContent = input.value;
 }
 
 function getOperatorSymbol(operator) {
@@ -48,18 +49,18 @@ function solve() {
   if (num1 !== '' && num2 !== '' && op !== '') {
     const result = operate(+num1, +num2, window[op]);
     input.value = result;
+    display.textContent = result;
     clearInput()
     input.dataset.a = result;
   }
 }
 
 const input = document.querySelector('#input');
+const display = document.querySelector('#display');
 const btnNumbers = document.querySelectorAll('button.num');
 const btnOperators = document.querySelectorAll('button.operator');
 const btnEqual = document.querySelector('#equal');
 const btnClear = document.querySelector('#clear');
-
-// let currentOp = [0, add, 0];
 
 btnClear.addEventListener('click', () => {
   clearInput();
