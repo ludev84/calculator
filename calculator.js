@@ -8,7 +8,8 @@ function multiply(a, b) {
   return a * b;
 }
 function divide(a, b) {
-  return a / b;
+  if (b === 0) return 'lmao'
+  else return a / b;
 }
 function operate(a, b, operator) {
   return operator(a, b)
@@ -51,7 +52,9 @@ function solve() {
     input.value = result;
     display.textContent = result;
     clearInput()
-    input.dataset.a = result;
+    if (result !== 'lmao') {
+      input.dataset.a = result;
+    }
   }
 }
 
@@ -76,7 +79,7 @@ btnNumbers.forEach((btn) => {
 
 btnOperators.forEach((btn) => {
   btn.addEventListener('click', () => {
-    if (input.dataset.a === '') updateInput('0', '', btn.id);;
+    if (input.dataset.a === '') updateInput('0', '', btn.id);
     updateInput('', '', btn.id);
   })
 });
