@@ -1,0 +1,13 @@
+button {
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+button#clear {
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+input {
+  font-size: 2em;
+}
