@@ -1,13 +1,26 @@
 button {
   font-size: 1.5em;
   padding: 1em;
-}
-
-button#clear {
-  padding-top: .25em;
-  padding-bottom: .25em;
+  margin: .05em 0;
 }
 
 input {
   font-size: 2em;
+  margin: 0;
+}
+
+#clear {
+  background-color: rgb(255, 135, 135);
+}
+
+.num {
+  background-color: rgb(221, 221, 221);
+}
+
+.operator {
+  background-color: rgb(107, 163, 235);
+}
+
+#equal {
+  background-color: orange;
 }
